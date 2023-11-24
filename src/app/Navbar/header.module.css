@@ -50,7 +50,7 @@
     font-size: 2.5rem;
     color: #333;
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: .5rem;
 }
 
 .header .navbar ul li a:hover {
@@ -71,7 +71,7 @@
 
 .header .icons div:hover,
 .header .icons a:hover {
-    color: #e84393;
+    color: #DEDEDE;
 }
 
 .header .searchForm {
@@ -107,5 +107,5 @@
 }
 
 .header .searchForm label:hover {
-    color: #e84393;
+    color: #DEDEDE;
 }

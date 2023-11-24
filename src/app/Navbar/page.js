@@ -43,7 +43,7 @@ const Page = () => {
     <>
       <header className={`${style.header}`}>
         <Link href={`/`} className={`${style.logo}`}>
-          Logo
+          OKUTALA
         </Link>
         <nav className={`${style.navbar} hidden md:flex`}>
           <ul>
@@ -72,7 +72,9 @@ const Page = () => {
             <FontAwesomeIcon icon={faSearch} width={30} />
           </div>
           <div>
-            <FontAwesomeIcon icon={faShoppingCart} width={30} />
+            <Link href={`/cart`}>
+              <FontAwesomeIcon icon={faShoppingCart} width={30} />
+            </Link>
           </div>
         </div>
         {isSearchFormVisible && (

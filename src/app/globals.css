@@ -24,3 +24,53 @@
     padding: 2rem 9%;
   }
 }
+
+
+@layer components {
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    font-size: 1.7rem;
+    color: #333;
+    border: 0.2rem solid #333;
+    background: none;
+    border-radius: 25rem;
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .heading {
+    text-align: center;
+    background: #DEDEDE;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .heading p {
+    font-size: 1.7rem;
+    color: #333;
+    padding-top: 0.7rem;
+  }
+
+  .heading p a {
+    color: #333;
+  }
+
+  .heading p a:hover {
+    color: #333;
+  }
+
+  .title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
