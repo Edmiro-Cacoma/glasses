@@ -1,0 +1,111 @@
+.header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bolder;
+    margin-right: auto;
+}
+
+.header .navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header .navbar ul li {
+    position: relative;
+}
+
+.header .navbar ul li:hover ul {
+    display: block;
+}
+
+
+.header .navbar ul li a {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 2rem;
+    display: block;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+    gap: 2;
+}
+
+.header .icons div,
+.header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.header .navbar ul li a:hover {
+    background: #eee;
+}
+
+.header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    background: #fff;
+    display: none;
+}
+
+.header .navbar ul li ul li {
+    width: 100%;
+}
+
+.header .icons div:hover,
+.header .icons a:hover {
+    color: #e84393;
+}
+
+.header .searchForm {
+    position: absolute;
+    top: 99%;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    height: 6rem;
+    border-top: 0.2rem solid #333;
+    background-color: white;
+}
+
+.header .searchForm.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .searchForm input {
+    width: 100%;
+    height: 100%;
+    padding-right: 1rem;
+    font-size: 1.7rem;
+    color: #666;
+    text-transform: none;
+}
+
+.header .searchForm label {
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.header .searchForm label:hover {
+    color: #e84393;
+}

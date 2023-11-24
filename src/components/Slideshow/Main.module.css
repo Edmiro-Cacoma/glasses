@@ -1,0 +1,56 @@
+.home {
+    position: relative;
+    padding: 0;
+}
+
+.home .slide {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem 7%;
+    background-size: cover !important;
+    background-position: center !important;
+
+}
+
+.home .slide .content span {
+    display: block;
+    color: #333;
+    font-size: 2rem;
+    animation: fadeIn .4s linear .2s backwards;
+}
+
+.home .slide .content h3 {
+    text-transform: uppercase;
+    color: #333;
+    padding: 1rem 0;
+    font-size: 6rem;
+    animation: fadeIn .4s linear .2s backwards;
+}
+
+.home #next-slide,
+.home #prev-slide {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.5rem;
+    font-size: 4rem;
+    color: #333;
+    border: 0.2rem solid #333;
+    background: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home .nextslide:hover,
+.home .prevslide:hover {
+    background: #333;
+    color: #fff;
+}
+
+.home .prevslide {
+    right: 9rem;
+}
